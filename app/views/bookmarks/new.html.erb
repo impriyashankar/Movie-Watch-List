@@ -1,0 +1,9 @@
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <!--<%#= f.input :name %>-->
+  <%= f.association :movie, include_blank: false %>
+  <!--<%#= f.association :list %>-->
+  <%= f.text_field :comment %>
+  <%= f.button :submit %>
+<% end %>
+
+<form action="lists/1/bookmarks" method="post"></form>
