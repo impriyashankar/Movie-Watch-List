@@ -9,3 +9,4 @@ production:
   api_key: "466915785248887"
   api_secret: "bKqYsL8uxJzrxV1DXhKYDVPU80o"
   secure: true
+  cdn_subdomain: true
