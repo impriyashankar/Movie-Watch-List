@@ -1,6 +1,7 @@
 <%= form_for(@list) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>
 <%= link_to "Back", root_path%>
