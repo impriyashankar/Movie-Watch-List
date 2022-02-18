@@ -7,6 +7,14 @@
     text-decoration: none;
     color: white;
   }
+
+  img {
+    height:250px;
+    object-fit:cover;
+  }
+  p.d-inline {
+    font-weight:bold;
+  }
 }
 
 .card-category {
