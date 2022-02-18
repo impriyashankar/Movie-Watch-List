@@ -30,3 +30,17 @@ a {
 #btn-red {
   color:red;
 }
+
+.simple_form {
+  width:300px;
+  background-color: rgb(226, 74, 120);
+  padding: 10px;
+  margin-bottom: 10px;
+
+
+  input[type="submit"] {
+    background-color: rgb(230, 230, 88);
+    padding: 10px;
+    margin: 20px 0 10px 0;
+  }
+}

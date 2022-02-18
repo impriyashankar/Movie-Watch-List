@@ -6,15 +6,18 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @bookmark = Bookmark.new #new line
 
   end
 
   def new
     @list = List.new
+    @bookmark = Bookmark.new
   end
 
   def create
     @list = List.new(list_params)
+    @bookmark = Bookmark.new #new line
     @list.save
 
     redirect_to root_path

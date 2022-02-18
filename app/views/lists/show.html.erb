@@ -10,8 +10,21 @@
 
 
 
-<div class="add-movie d-flex flex-row-reverse mt-3 mb-3"> <%= link_to "Add a movie", new_list_bookmark_path(@list), class: "btn btn-flat"%></div>
+<!--<div class="add-movie d-flex flex-row-reverse mt-3 mb-3"> <%= link_to "Add a movie", new_list_bookmark_path(@list), class: "btn btn-flat"%></div>-->
+<div class="add-movie d-flex flex-column align-items-end mt-3 mb-3" data-controller="show-bookmark">
+  <button style= "width:300px" class ="btn btn-flat" data-action="click->show-bookmark#show"> Add a movie</button>
 
+  <!--#=new block-->
+  <%= simple_form_for [@list, @bookmark], html: { class: 'd-none', data: { target: 'show-bookmark.form'} } do |f| %>
+    <!--<%#= f.input :name %>-->
+    <%= f.association :movie, include_blank: false %>
+    <!--<%#= f.association :list %>-->
+    <%= f.text_field :comment %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
+
+<!--data-show-bookmark-target: "form" -->
 
 
 
@@ -41,6 +54,9 @@
     </li>
   <% end %>
 </ul>
+
+
+
 
 
 
