@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Movie.destroy_all
 
 require "json"
 require "open-uri"
@@ -14,7 +15,7 @@ response = URI.open(url).read
 response_json = JSON.parse(response)
 #response_json = response_json.first(5)
 response_arr = response_json["results"]
-movie_db = response_arr.first(5)
+movie_db = response_arr.last(10)
 
 movie_db.each{|item|
 title = item["original_title"]
