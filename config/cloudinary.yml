@@ -1,0 +1,11 @@
+development:
+  cloud_name: "dqpbsevz8"
+  api_key: "466915785248887"
+  api_secret: "bKqYsL8uxJzrxV1DXhKYDVPU80o"
+  secure: true
+
+production:
+  cloud_name: "dqpbsevz8"
+  api_key: "466915785248887"
+  api_secret: "bKqYsL8uxJzrxV1DXhKYDVPU80o"
+  secure: true
