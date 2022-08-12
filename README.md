@@ -1,24 +1,46 @@
-# README
+# Watch List - for movies 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> A watchlist to save one's favourite movies.
 
-Things you may want to cover:
+> Live demo [_here_](https://priya-lewagon-watchlist.herokuapp.com/).
 
-* Ruby version
+## Table of Contents
+* [General Info](#general-information)
+* [Background](#background)
+* [Technologies Used](#technologies-used)
+* [Screenshots](#screenshots)
+* [Objectives](#objectives)
 
-* System dependencies
 
-* Configuration
+## General Information
+A 3-model app where the user can create lists to save movies. 
 
-* Database creation
+Gems used in the app:
 
-* Database initialization
+`autoprefixer-rails`
+`font-awesome-sass`
+`simple_form"`
+`sassc-rails`
 
-* How to run the test suite
+## Background
 
-* Services (job queues, cache servers, search engines, etc.)
+This is a rails app that uses Stimulus controllers to implement JavaScript behavior. This was also the first time I worked with Cloudinary and production deployment scenarios with Heroku.
 
-* Deployment instructions
 
-* ...
+## Technologies Used
+- Ruby on Rails
+- Stimulus framework
+- Cloudinary
+- Heroku
+
+## Screenshots
+
+![Screenshot 2022-08-12 at 11 36 47 PM](https://user-images.githubusercontent.com/20161096/184448171-f83588dd-5210-48d1-a017-37e6ed1f3f9b.png)
+
+
+## Objectives
+
+1. Create a new movie list with a suitable background picture.
+2. Add a movie to the list. Any user can add review to a movie collection. 
+3. User can delete any review added by him for any movie.
+4. Seed real movies by using API (with open-uri and json ruby libs).
